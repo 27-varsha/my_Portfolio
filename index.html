@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Varsha Thakur | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <h1>Varsha Thakur</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#cv-download">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="dark-mode-toggle">
+        <label>
+          <input type="checkbox" id="theme-toggle" />
+           Dark Mode
+        </label>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <img src="images/profile.jpeg" alt="Profile Picture" class="profile-pic">
+    <h2>Hello, I'm Varsha Thakur</h2>
+    <p>Aspiring AI/ML Engineer | Data Analyst | Tech Enthusiast</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>My name is Varsha Thakur, and I come from Bengaluru, Karanataka. 
+      I am passionate about learning new things and enjoy working on innovative projects. 
+      I have a strong interest in technology and problem-solving, especially through data and machine learning. 
+      I'm a team player with good communication skills and a constant drive to improve. Outside of academics, I enjoy dancing, music, and 
+      exploring creative ideas. I aim to contribute meaningfully wherever I go and grow both personally and professionally.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/project1.jpeg" alt="Project One Screenshot">
+        <h3>Fraud Detection in Ethereum Cryptocurrency Transactions </h3>
+        <p>This project focuses on detecting fraudulent transactions in Ethereum cryptocurrency using machine learning.
+           An XGBoost classifier was trained on blockchain transaction data, achieving high accuracy and a strong ROC-AUC score.
+          Stratified sampling and precision-recall analysis were used to handle class imbalance and improve detection of rare fraud cases.
+          The model enhances the reliability of blockchain analytics by identifying suspicious activities effectively.</p>
+          <a href="https://github.com/27-varsha/Ethereum-Fraud-Detection" class="btn" target="_blank">View on GitHub</a>
+        </div>
+      <div class="project-card">
+        <img src="images/project2.jpeg" alt="Project Two Screenshot">
+        <h3>Customer Churn Prediction using Machine Learning</h3>
+        <p>The Customer Churn Prediction project uses machine learning to identify customers likely to leave a telecom service.
+           Using the Telco Customer dataset, the pipeline includes data cleaning, feature engineering, and model training. 
+           Techniques like SMOTE are applied to handle class imbalance, and models are optimized through hyperparameter tuning. 
+           Evaluation is done using the ROC-AUC score to ensure high predictive accuracy. Additionally, churn trends are visualized 
+           using Seaborn to uncover valuable business insights.</p>
+        <a href="https://github.com/27-varsha/Customer-Churn-Prediction-using-Machine-Learning" class="btn" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="cv-download">
+    <h2>My Resume</h2>
+    <p>You can download my CV here:</p>
+    <a href="cv.pdf" class="btn" download>Download CV</a>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Varsha Thakur. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
